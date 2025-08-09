@@ -25,16 +25,16 @@ import {
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const navigationItems = [
-  { title: "Overview", url: "/", icon: Home },
-  { title: "User Management", url: "/users", icon: Users },
-  { title: "Artwork Management", url: "/artworks", icon: Palette },
-  { title: "Portfolio & Fractals", url: "/portfolios", icon: TrendingUp },
-  { title: "Transactions", url: "/transactions", icon: CreditCard },
-  { title: "Sponsorship", url: "/sponsorship", icon: Star },
-  { title: "Communications", url: "/communications", icon: MessageCircle },
-  { title: "Analytics", url: "/analytics", icon: PieChart },
-  { title: "Settings", url: "/settings", icon: Settings },
-  { title: "Audit Logs", url: "/audit", icon: FileText },
+  { title: "Overview", url: "/admin", icon: Home },
+  { title: "User Management", url: "/admin/users", icon: Users },
+  { title: "Artwork Management", url: "/admin/artworks", icon: Palette },
+  { title: "Portfolio & Fractals", url: "/admin/portfolios", icon: TrendingUp },
+  { title: "Transactions", url: "/admin/transactions", icon: CreditCard },
+  { title: "Sponsorship", url: "/admin/sponsorship", icon: Star },
+  { title: "Communications", url: "/admin/communications", icon: MessageCircle },
+  { title: "Analytics", url: "/admin/analytics", icon: PieChart },
+  { title: "Settings", url: "/admin/settings", icon: Settings },
+  { title: "Audit Logs", url: "/admin/audit", icon: FileText },
 ];
 
 export function DashboardSidebar() {
@@ -43,7 +43,7 @@ export function DashboardSidebar() {
   const isCollapsed = state === "collapsed";
 
   const isActive = (path: string) => {
-    if (path === "/") return location.pathname === "/";
+    if (path === "/admin") return location.pathname === "/admin";
     return location.pathname.startsWith(path);
   };
 

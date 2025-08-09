@@ -5,7 +5,7 @@ import { TrendingUp, ArrowRight, Sparkles, AlertTriangle, Shield, Clock } from "
 export function DashboardHero() {
   return (
     <div className="relative overflow-hidden bg-card rounded-2xl border border-border shadow-card">
-      
+
       <div className="relative p-8 lg:p-12">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Hero Content */}
@@ -15,7 +15,7 @@ export function DashboardHero() {
                 <Sparkles className="w-3 h-3 mr-1" />
                 Admin Dashboard
               </Badge>
-              
+
               <div className="space-y-3">
                 <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
                   Crestox Admin
